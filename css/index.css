@@ -1,5 +1,9 @@
 
-#circleOfMe{
-    max-width: 20%;
-    
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #8e8d8a;
+    background-color: #eae7dc;
+}
+
+#test{
+    background-color: aqua;
 }
