@@ -1,14 +1,10 @@
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #FAFAF9;
-    background-color: #A37270;
-    text-emphasis: 12px;
-    border-style: solid;
-}
-
-a{
-    border-style: solid;
-    border-color: #896A61;
-    color: black;
-
-}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #e3f2fd;
+    text-align: center;
+  }
+  

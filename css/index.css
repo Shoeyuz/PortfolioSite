@@ -1,13 +1,27 @@
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #FAFAF9;
-    background-color: #A37270;
-    text-emphasis: 12px;
-    border-style: solid;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: #e3f2fd;
+  text-align: center;
 }
 
-a{
-    border-style: solid;
-    border-color: #896A61;
-    color: black;
+.icon:hover{
+    opacity: 50%;
+} 
+
+.container{
+    width: 100%;
+    padding-top: 10pc;
+}
+.img{
+    background-color: cadetblue;
+    border-radius: 60%;
+}
+
+#linkedIn{
+    height: 64px;
+    width: 72px;
 }
