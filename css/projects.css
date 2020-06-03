@@ -39,3 +39,9 @@ color: lightblue;
 .card-deck{
   padding-top: 150px;
 }
+
+.card:hover{
+  border: 12px solid lightblue;
+  background-color: lightblue;
+  opacity: 100%;
+}
