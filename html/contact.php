@@ -1,8 +1,25 @@
 
 
 <!DOCTYPE html>
+<?php
+
+if($_POST["submit"]) {
+    $recipient="michael.shlega@gmail.com";
+    $subject=$_POST["subject"];
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+?>
 
 <html lang = "eg">
+  <?php ?>
   
     <head>
 
@@ -25,32 +42,32 @@
 
     <body>
 
-        <form id = "contactForm">
+        <form id = "contactForm" method="post" action="contact.php">
             <div class="form-group">
               <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control form-control-lg" name = "email_address" id="exampleFormControlInput1" placeholder="you@123.com">
+              <input type="email" class="form-control form-control-lg" name = "sender_email" id="exampleFormControlInput1" placeholder="you@123.com">
             </div>
 
            
             <div class="row">
                 <div class="col">
                   <label for="exampleFormControlInput1">Subject</label>
-                  <input type="text" class="form-control" placeholder="Hi Michael!" id="exampleFormControlInput1">
+                  <input type="text" class="form-control" placeholder="Hi Michael!" name  = "subject" id="exampleFormControlInput1">
                 </div>
                 <div class="col">
                   <label for="exampleFormControlInput1">Your Name</label>
-                  <input type="text" class="form-control" placeholder="Name" id="exampleFormControlInput1">
+                  <input type="text" class="form-control" placeholder="Name" name = "sender" id="exampleFormControlInput1">
                 </div>
             </div>
         
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Write me a message!" name = "feedback"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Write me a message!" name = "message"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" value = "Send Form">Send message</button>
           </form>
-
+          <?=$thankYou ?>
 
 
 
