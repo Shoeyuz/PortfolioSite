@@ -1,6 +1,4 @@
 
-
-<!DOCTYPE html>
 <?php
 
 if($_POST["submit"]) {
@@ -18,6 +16,7 @@ if($_POST["submit"]) {
 }
 ?>
 
+<!DOCTYPE html>
 <html lang = "eg">
   <?php ?>
   
@@ -33,10 +32,10 @@ if($_POST["submit"]) {
     </head>
 
     <nav class="nav nav-pills nav-fill navbar navbar-light" style="background-color: #e3f2fd;">
-        <a class="nav-item nav-link" href="index.html">About</a>
-        <a class="nav-item nav-link" href="projects.html">Projects</a>
-        <a class="nav-item nav-link" href="workExperience.html">Work Experience</a>
-        <a class="nav-item nav-link active" href="contact.html"> Contact Me</a>
+    <a class="nav-item nav-link" href="index.php">About</a>
+        <a class="nav-item nav-link active" href="projects.php">Projects</a>
+        <a class="nav-item nav-link" href="workExperience.php">Work Experience</a>
+        <a class="nav-item nav-link" href="contact.php"> Contact Me</a>
 
     </nav>
 
