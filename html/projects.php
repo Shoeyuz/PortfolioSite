@@ -12,11 +12,10 @@
     </head>
 
     <nav class="nav nav-pills nav-fill navbar navbar-light" style="background-color: #e3f2fd;">
-        <a class="nav-item nav-link" href="index.php">About</a>
-        <a class="nav-item nav-link active" href="projects.php">Projects</a>
-        <a class="nav-item nav-link" href="workExperience.php">Work Experience</a>
-        <a class="nav-item nav-link" href="contact.php"> Contact Me</a>
-
+        <a class="nav-item nav-link" href="/PortfolioSite/html/index.php">About</a>
+        <a class="nav-item nav-link active" href="/PortfolioSite/html/projects.php">Projects</a>
+        <a class="nav-item nav-link" href="/PortfolioSite/html/workExperience.php">Work Experience</a>
+        <a class="nav-item nav-link" href="/PortfolioSite/html/contact.php"> Contact Me</a>
     </nav>
 
     <body>

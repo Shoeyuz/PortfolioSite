@@ -1,19 +1,40 @@
 
 <?php
+  
 
-if($_POST["submit"]) {
-    $recipient="michael.shlega@gmail.com";
-    $subject=$_POST["subject"];
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
+  if($_POST["submit"]) {
+    if (isset($_POST["subject"]))
+    {
+      $subject = $_POST["subject"];
+      
+    } 
+    if (isset($_POST["sender"]))
+    {
+      $sender = $_POST["sender"];
+    
+    } 
+    if (isset($_POST["senderEmail"]))
+    {
+      $senderEmail = $_POST["senderEmail"];
+      
+    } 
+    if (isset($_POST["message"]))
+    {
+      $message = $_POST["message"];
+      
+    } 
+      $recipient="michael.shlega@gmail.com";
+      //$subject=$_POST["subject"];
+      //$sender=$_POST["sender"];
+      //$senderEmail=$_POST["senderEmail"];
+      //$message=$_POST["message"];
 
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+      $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+      mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
+      $thankYou="<p>Thank you! Your message has been sent.</p>";
+  }
 ?>
 
 <!DOCTYPE html>
@@ -32,10 +53,10 @@ if($_POST["submit"]) {
     </head>
 
     <nav class="nav nav-pills nav-fill navbar navbar-light" style="background-color: #e3f2fd;">
-    <a class="nav-item nav-link" href="index.php">About</a>
-        <a class="nav-item nav-link active" href="projects.php">Projects</a>
-        <a class="nav-item nav-link" href="workExperience.php">Work Experience</a>
-        <a class="nav-item nav-link" href="contact.php"> Contact Me</a>
+        <a class="nav-item nav-link" href="/PortfolioSite/html/index.php">About</a>
+        <a class="nav-item nav-link " href="/PortfolioSite/html/projects.php">Projects</a>
+        <a class="nav-item nav-link" href="/PortfolioSite/html/workExperience.php">Work Experience</a>
+        <a class="nav-item nav-link active" href="/PortfolioSite/html/contact.php"> Contact Me</a>
 
     </nav>
 
