@@ -1,45 +1,52 @@
 
 <?php
+ 
+ if($_POST) {
+     $visitor_name = "";
+     $visitor_email = "";
+     $email_title = "";
+     $visitor_message = "";
+     $recipient = "michael.shlega@gmail.com";
+      
+     if(isset($_POST['sender'])) {
+         $visitor_name = filter_var($_POST['sender'], FILTER_SANITIZE_STRING);
+     }
+      
+     if(isset($_POST['sender_email'])) {
+         $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['sender_email']);
+         $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
+     }
+      
+     if(isset($_POST['subject'])) {
+         $email_title = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+     }
+      
   
-
-  if($_POST["submit"]) {
-    if (isset($_POST["subject"]))
-    {
-      $subject = $_POST["subject"];
+     if(isset($_POST['message'])) {
+         $visitor_message = htmlspecialchars($_POST['message']);
+     }
       
-    } 
-    if (isset($_POST["sender"]))
-    {
-      $sender = $_POST["sender"];
-    
-    } 
-    if (isset($_POST["senderEmail"]))
-    {
-      $senderEmail = $_POST["senderEmail"];
+   
       
-    } 
-    if (isset($_POST["message"]))
-    {
-      $message = $_POST["message"];
+     $headers  = 'MIME-Version: 1.0' . "\r\n"
+     .'Content-type: text/html; charset=utf-8' . "\r\n"
+     .'From: ' . $visitor_email . "\r\n";
       
-    } 
-      $recipient="michael.shlega@gmail.com";
-      //$subject=$_POST["subject"];
-      //$sender=$_POST["sender"];
-      //$senderEmail=$_POST["senderEmail"];
-      //$message=$_POST["message"];
-
-      $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-      mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-      $thankYou="<p>Thank you! Your message has been sent.</p>";
-  }
-?>
+     if(mail($recipient, $email_title, $visitor_message, $headers)) {
+         echo "<p>Thank you for reaching out to me, $visitor_name! I look forward to reading youe email, and I will try to get back to you in 24 hours. </p>";
+     } else {
+         echo '<p>The email did not go through! Please try again.</p>';
+     }
+      
+ //} else {
+ //    echo '<p>Something went wrong</p>';
+ }
+  
+ ?>
 
 <!DOCTYPE html>
 <html lang = "eg">
-  <?php ?>
+ 
   
     <head>
 
@@ -87,7 +94,6 @@
 
             <button type="submit" class="btn btn-primary" value = "Send Form">Send message</button>
           </form>
-          <?=$thankYou ?>
 
 
 
@@ -98,10 +104,10 @@
     <div class="footer">
         <div id = "logoholder">
         <a href = "https://github.com/Shoeyuz">
-            <img src = "C:\Users\micha\OneDrive\Documents\GitHub\Isocrunch2\PortfolioSite\pictures\GitHub-Mark-Light-64px.png" class = "icon" alt = "Github link logo"> 
+            <img src = "/PortfolioSite/pictures/GitHub-Mark-Light-64px.png" class = "icon" alt = "Github link logo"> 
         </a>
         <a href = "https://www.linkedin.com/in/michael-shlega-3435671a3/">
-            <img src = "C:\Users\micha\OneDrive\Documents\GitHub\Isocrunch2\PortfolioSite\pictures\LI-In-Bug.png" class = "icon" id = "linkedIn" alt = "LinkedIn link logo">
+            <img src = "/PortfolioSite/pictures/LI-In-Bug.png" class = "icon" id = "linkedIn" alt = "LinkedIn link logo">
         </a>
         </div>
     </div>
