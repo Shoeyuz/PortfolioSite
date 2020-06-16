@@ -38,10 +38,11 @@ color: lightblue;
 
 .card-deck{
   padding-top: 150px;
+  width: 95%;
 }
 
 .card:hover{
-  border: 12px solid lightblue;
+  border: 10px solid lightblue;
   background-color: lightblue;
   opacity: 100%;
 }
