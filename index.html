@@ -5,69 +5,66 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/PortfolioSite/css/index.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
 
         <title>Michael Shlega</title> 
     </head>
 
-    <nav class="nav nav-pills nav-fill navbar navbar-dark bg-dark">
-        <a class="nav-item nav-link active" href="/PortfolioSite/index.html">About</a>
-        <a class="nav-item nav-link" href="/PortfolioSite/projects.html">Projects</a>
-        <a class="nav-item nav-link" href="/PortfolioSite/workExperience.html">Work Experience</a>
-        <a class="nav-item nav-link" href="/PortfolioSite/contact.html"> Contact Me</a>
-    </nav>
+    
 
    
-    <body class = "main" style="background-image: url('/PortfolioSite/pictures/webb.png');">
+    <body class = "main">
+        <header class = "main-header">
+          <h1><span>Michael Shlega</span> </h1>
+          <p>Honors Comp Sci at Carleton University. Specialization in computer and internet security</p>
+        </header>
 
+        <main class="container">
+          <section class = "card">
+          
+            <img src = "/PortfolioSite/pictures/LI-In-Bug.png" alt ="">
+            <div>
+              <h3>About Me</h3>
+              <p>I am a second year student with a passion for research and the area of data science and cybersecurity. I have had a lot of experience with front end as well as 
+                a fair knowledge of backend. I also have a huge passion for volleyball and am currently the president of the Carleton Volleyball Club.
+              </p>
+              <a href="https://www.linkedin.com/in/michael-shlega-3435671a3/" class="btn"> See more about me!</a>
+            </div>
+          </section>
 
-        <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                <img src="..." alt="..." class="rounded-circle">              
-              </div>
-              <div class="col-sm">
-                <h1>Michael Shlega</h1>
-              </div>
-              <div class="col-sm">
-                
-              </div>
+          <section class = "card" data-aos="fade-left">
+            <img src = "/PortfolioSite/pictures/github-mark-big.png" alt ="">
+            <div>
+              <h3>My Work</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, vitae fugiat. N
+                 ihil assumenda dignissimos, sunt commodi quis facilis dolorum quo, omnis dolore officiis laboriosam aperiam iusto ad necessitatibus
+                 temporibus obcaecati.</p>
+              <a href="#" class="btn"> Take a look!</a>
             </div>
             
-            <div class="row" id = "paragraph">
-               
-                <div class="col">
-                  <p>  I am a second year Computer Science student at Carleton University specializing in Computer and Internet Security. I am passionate about all things related
-                    to computer science, especially research, and I am passionate about improving my skillset. I have had experience with Python and Java through schoolwork and side projects,
-                    while I have been learning html/css/javascript through hackathons and the creation of this website!
-                  </p>
-                </div>
-                      
-            </div>
-        </div>
+          </section>
+        </main>
+            
+            
     </body>
                     
-        </div>
+        
         
 
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset:400,
+            duration: 800
+          });
+        </script>
+      </body>
 
     
-    <div class="footer">
-        <div id = "logoholder">
-        <a href = "https://github.com/Shoeyuz">
-            <img src = "/PortfolioSite/pictures/GitHub-Mark-Light-64px.png" class = "icon" alt = "Github link logo"> 
-        </a>
-        <a href = "https://www.linkedin.com/in/michael-shlega-3435671a3/">
-            <img src = "/PortfolioSite/pictures/LI-In-Bug.png" class = "icon" id = "linkedIn" alt = "LinkedIn link logo">
-        </a>
-        </div>
-    </div>
+    
 
 </html>
