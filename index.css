@@ -68,8 +68,15 @@ img{
 
 .card img{
   margin-bottom: 2rem;
+  
 }
 
+#imgCard {
+  height: auto; 
+  width: auto; 
+  max-width: 400px; 
+  max-height: 400px;
+}
 
 .card > div{
   padding: 2 rem;
