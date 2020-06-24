@@ -39,6 +39,13 @@ a{
   line-height: 1.2;
 }
 
+.main-header h2{
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+  padding: 1rem;
+}
+
 
 .main-header p{
   font-size: 2rem;
