@@ -106,13 +106,13 @@ img{
   .card{
     display: block;
   }
-  .main-header{
+  .main-header h1{
     margin-top:2rem;
     padding: 3rem;
   }
   .main-header p{
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     padding: 1.5rem;
 
   }
