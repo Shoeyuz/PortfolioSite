@@ -107,12 +107,12 @@ img{
     display: block;
   }
   .main-header{
-    padding-top:2rem;
+    margin-top:2rem;
     padding: 3rem;
   }
   .main-header p{
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 1.5rem;
 
   }
@@ -122,6 +122,12 @@ img{
     width: auto; 
     max-width: 300px; 
     max-height: 300px;
+  }
+  #bigOne {
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
   }
   
 }
