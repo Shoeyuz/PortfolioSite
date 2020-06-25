@@ -112,6 +112,10 @@ img{
     padding: 50px;
   }
 
+  .main-header h2{
+    height: 50vh;
+  }
+
   #imgCard {
     height: auto; 
     width: auto; 
