@@ -107,13 +107,21 @@ img{
     display: block;
   }
   .main-header{
-    
+    padding-top:2rem;
     padding: 3rem;
   }
   .main-header p{
     font-size: 2rem;
     margin-bottom: 1rem;
     padding: 1.5rem;
+
+  }
+
+  #imgCard {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
   }
   
 }
