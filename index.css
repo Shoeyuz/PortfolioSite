@@ -106,8 +106,9 @@ img{
   .card{
     display: block;
   }
-  .main-header h1{
-    height: 100vh;
+  .main-header{
+    height: 150vh;
+    padding: 50px;
   }
 
   #imgCard {
