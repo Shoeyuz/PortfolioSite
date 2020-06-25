@@ -41,14 +41,16 @@ a{
 
 .main-header h2{
   font-size: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 
 .main-header p{
   font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 img{
@@ -108,4 +110,10 @@ img{
     
     padding: 3rem;
   }
+  .main-header p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+  }
+  
 }
