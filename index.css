@@ -123,7 +123,7 @@ img{
     max-width: 300px; 
     max-height: 300px;
   }
-  #bigOne {
+  .bigOne {
     height: auto; 
     width: auto; 
     max-width: 200px; 
